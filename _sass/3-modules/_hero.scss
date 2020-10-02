@@ -1,7 +1,7 @@
 .hero {
   padding: 80px 0;
   margin-bottom: 80px;
-  background: #f5f5f5;
+  background: $gray-background-color;
 
   .last-item {
     display: flex;
@@ -13,10 +13,13 @@
     justify-content: center;
     width: 100%;
     padding: 0 40px 0 0;
-    
+
     .hero__title {
       font-size: 38px;
       font-weight: normal;
+    }
+    .dodo_title {
+      margin-bottom: 5px;
     }
 
     .hero__subtitle {
@@ -68,7 +71,7 @@
 
     .hero__image {
       margin-bottom: 20px;
-      
+
       img {
         box-shadow: none;
       }

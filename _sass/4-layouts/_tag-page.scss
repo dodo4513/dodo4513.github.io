@@ -1,12 +1,12 @@
 .arhive-head {
   padding: 80px 0;
   margin-bottom: 40px;
-  background: #f5f5f5;
+  background: $gray-background-color;
 
   .archive-title {
     text-align: center;
     font-weight: normal;
-    
+
     span {
       font-weight: 700;
     }
