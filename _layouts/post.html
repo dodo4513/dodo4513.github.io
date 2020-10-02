@@ -12,6 +12,10 @@ layout: default
         <h1 class="post-title">{{ page.title | escape }}</h1>
 
         <div class="post__info">
+            {% if page.series %}
+            <span style="font-size: 15px; font-weight: 700; color: black; margin-right: 9px;">{{ page.series }}</span>
+            {% endif %}
+
           <div class="post__author">
             <span>By</span>
             <a href="{{ site.baseurl }}/about/" class="author-name">{{site.data.settings.author.name}}</a>
@@ -24,11 +28,11 @@ layout: default
             {% endfor %}
           </div>
           {% endif %}
+
         </div>
       </div>
     </div>
   </div>
-
   {% assign no-image = nil %}
   {% if page.image %}
     <div class="post__head">
@@ -37,9 +41,7 @@ layout: default
   {% else %}
     {% assign no-image = 'post-no-image' %}
   {% endif %}
-
   </div>
-
 
   <div class="container">
   <div class="row">
@@ -53,6 +55,8 @@ layout: default
     <!-- end post -->
     </div>
   </div>
+
+  {% include series.html %}
 
   <div class="container">
   <div class="post__navigation">
